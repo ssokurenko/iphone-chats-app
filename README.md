@@ -5,7 +5,7 @@
 http://iphone-chats.html5space.org/
 
 ## Screenshot
-
+![iphone chats screenshot][iphone]
 [iphone]: http://cl.ly/image/1D3H0G34250w/iphone-chats.png "iphone chats screenshot"
 
 ## Usage
