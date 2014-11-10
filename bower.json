@@ -1,0 +1,9 @@
+{
+  "name": "iphonemessage",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "html2canvas": "0.4.0"
+  },
+  "devDependencies": {}
+}
