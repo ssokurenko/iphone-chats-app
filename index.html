@@ -1,0 +1,94 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTML5 iPhone Message Chats Composer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <main id="content">
+            <div class="logo-block">
+                <a href="#">
+                    <p class="logo">iPhone Chat Generator</p>
+                </a>
+            </div>
+            <div id="iphone">
+                <div class="screen">
+                    <div class="top-bar">
+                        <div class="carrierName"></div>
+                        <div class="current-time"></div>
+                        <div class="contactName"></div>
+                    </div>
+                    <div class="message-board">
+                        <!-- initial messages -->
+                        <div class="message right-side"><p>Hi welcome :)</p><div class="tail"></div></div>
+                        <div class="message left-side"><p>Looks nice, but what's that?</p><div class="tail"></div></div>
+                        <div class="message right-side"><p>It's an HTML5 for composing iOS7 looking message chats</p><div class="tail"></div></div>
+                        <div class="message left-side"><p>How to use it?</p><div class="tail"></div></div>
+                        <div class="message right-side"><p>1) Press the reset button (the big round one at the bottom of the phone) to start from scratch</p><div class="tail"></div></div>
+                        <div class="message right-side"><p>2) Have fun with typing some messages</p><div class="tail"></div></div>
+                        <div class="message right-side"><p>3) Press the camera icon to take a screenshot</p><div class="tail"></div></div>
+                        
+                    </div>
+                    <div class="bottom-bar">
+                        <div class="camera-button"></div>
+                        <input type="text" class="message-field" placeholder="Type Message" />
+                        <div class="send-button"></div>
+                    </div>
+                </div>
+                <div class="reset-button">
+                </div>
+                <div class="screenshot-container">
+                </div>
+            </div>
+        </main>
+        <div class="screenshot-image-container">
+            <div class="image-container">
+                <div class="close-button">
+                </div>
+            </div>
+        </div>
+        <footer class="copyright">
+                <p>Copyright &copy; 2013 <a href="https://github.com/html5space">Serge Sokurenko</a>, iPhone® is a trademark of Apple Inc., registered in the U.S. and other countries</p>
+        </footer>
+        
+        <!-- AddThis Smart Layers BEGIN -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ef0513113ae6bab"></script>
+        <script type="text/javascript">
+          addthis.layers({
+            'theme' : 'transparent',
+            'share' : {
+              'position' : 'right',
+              'numPreferredServices' : 6
+            }   
+          });
+        </script>
+        <!-- END AddThis Smart Layers -->
+
+        <!-- build:js scripts/app.js -->
+        <script src="scripts/third-party/html2canvas.js"></script>
+        <script src="scripts/third-party/jquery-1.10.2.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/modules/addMessage.js"></script>
+        <script src="scripts/modules/resetMessages.js"></script>
+        <script src="scripts/modules/topBarAdjustments.js"></script>
+        <script src="scripts/modules/randomBackground.js"></script>
+        <script src="scripts/modules/takeScreenshot.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

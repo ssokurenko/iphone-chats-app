@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f3;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+body.dark {
+    background-color: #1a1a1a !important;
+}
+
+body a {
+    color: white;
+    font-weight: 500;
+}
+
+/* Custom font */
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://themes.googleusercontent.com/static/fonts/lobster/v5/NIaFDq6p6eLpSvtV2DTNDQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+#content {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 768px;
+}
+
+.logo-block {
+    filter:alpha(opacity=40); opacity:0.4;
+}
+
+.logo-block a {
+    text-decoration: none;
+}
+
+.logo-block:hover {
+    filter:alpha(opacity=100); opacity:1;
+}
+
+.logo {
+    font-family: 'Lobster', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+#iphone {
+    margin: 10px auto 0 auto;
+    position: relative;
+    width: 440px;
+    height: 926px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    background: url("../images/iphone.png") center center no-repeat;
+    background-size: 440px 926px;
+}
+
+.screen {
+    position: absolute;
+    width: 370px;
+    height: 660px;
+    top: 135px;
+    left: 37px;
+}
+
+/*------------ Top Bar ----------------*/
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 74px;
+    z-index: 100;
+}
+
+.top-bar .contactName {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    top: 33px;
+    z-index: 100000;
+}
+
+.top-bar .carrierName {
+    position: absolute;
+    height: 25px;
+    width: 52px;
+    font-weight: 600;
+    font-size: 12px;
+    top: -3px;
+    left: 50px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.top-bar .current-time {
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 13px;
+    top: -3px;
+    text-align: center;
+}
+
+/*------------ END Top Bar ----------------*/
+
+/*------------ Message Board ----------------*/
+
+.message-board {
+    position: absolute;
+    overflow: hidden;
+    background: #fff;
+    width: 370px;
+    height: 540px;
+    top: 74px;
+}
+
+.message-board .message {
+    width: 65%;
+    margin: 10px 15px 0 15px;
+    line-height: 1.3em;
+    border-radius: 20px;
+    position: relative;
+}
+
+.message-board .message p {
+    margin: 10px;
+    font-size: 18px;
+    overflow-wrap: break-word;
+    letter-spacing: 0.04em;
+}
+
+.message.right-side {
+    float: right;
+    border: 1px solid #31a5fc;
+    background: #31a5fc;
+}
+
+.message.right-side p {
+    font-weight: 100;
+    color: #fff;
+}
+
+.message.left-side {
+    float: left;
+    border: 1px solid #e5e5e9;
+    background: #e5e5e9;
+    letter-spacing: 0.01em;
+}
+
+.message.left-side p {
+    color: #000;
+}
+
+.tail {
+    width: 20px;
+    height: 16px;
+    background-color: yellow;
+}
+
+.right-side .tail {
+    position: absolute;
+    bottom: 0;
+    right: -9px;
+    background: url("../images/right-tail.png") center center no-repeat;
+    background-size: 20px 16px;
+}
+
+.left-side .tail {
+    position: absolute;
+    bottom: 0;
+    left: -9px;
+    background: url("../images/left-tail.png") center center no-repeat;
+    background-size: 20px 16px;
+}
+
+.no-messages p {
+    color: #393939;
+    margin: 10px;
+    font-size: 18px;
+    overflow-wrap: break-word;
+    line-height: 1.3em;
+    letter-spacing: 0.015em
+}
+
+/*------------ END Message Board ----------------*/
+
+/*------------ Bottom Bar ----------------*/
+
+.bottom-bar {
+    position: absolute;
+    width: 370px;
+    height: 46px;
+    bottom: 0;
+    border-top: 1px solid #cacaca;
+    background: #f3f3f3;
+}
+
+.camera-button, .send-button {
+    position: absolute;
+    bottom: 0;
+    height: 46px;
+}
+
+.camera-button {
+    left: 0;
+    width: 60px;
+    background: url("../images/camera-button.png") center center no-repeat;
+    background-size: 28px 22px;
+}
+
+.send-button {
+    right: 0;
+    width: 80px;
+    background: url("../images/send-button.png") center center no-repeat;
+    background-size: 42px 16px;  
+}
+
+.message-field {
+    position: absolute;
+    left: 56px;
+    top: 7px;
+    outline: none;
+    padding-left: 10px;
+    width: 218px;
+    height: 28px;
+    border: 1px solid #cacaca;
+    border-radius: 9px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}
+
+.reset-button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 28px;
+    left: 184px;
+}
+
+.screen-glare {
+    width: 242px;
+    height: 640px;
+    position: absolute;
+    top: 14px;
+    right: 9px;
+    background: url("../images/glare.png") center center no-repeat;
+    z-index: 1000;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.copyright p {
+    margin: 20px 10px 15px 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/*------------ END Bottom Bar ----------------*/
+
+
+/*------------ Output Image  ----------------*/
+
+.screenshot-image-container {
+    display: none;
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+    z-index: 1000;
+    height: 976px;
+    text-align: center;
+}
+
+.screenshot-container {
+    visibility: hidden;
+}
+
+.image-container {
+    width: 490px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.image-container img {
+    display: none;
+    margin: 10px auto;
+}
+
+.close-button {
+    display: none;
+    z-index: 1001;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/close.png") center center no-repeat;
+    float: right;
+    margin-top: 10px;
+}
+
+/*------------ END Output Image  ----------------*/
+
