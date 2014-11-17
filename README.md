@@ -8,7 +8,7 @@ http://iphone-chats.html5space.org
 
 ## Screenshot
 ![iphone chats screenshot][iphone]
-[iphone]: http://cl.ly/image/1D3H0G34250w/iphone-chats.png "iphone chats screenshot"
+[iphone]: /image_src/iphone-chats.png "iphone chats screenshot"
 
 ## Usage
 1. Press the home button to reset
