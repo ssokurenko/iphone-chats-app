@@ -1,10 +1,8 @@
-# iPhone Message Chat Emulator
-
-HTML5 web application
+# iPhone Message emulator web app
 
 ## Live Demo
 
-http://iphone-chats.html5space.org
+http://ssokurenko.github.io/iphone-chats-app/
 
 ## Screenshot
 ![iphone chats screenshot][iphone]
